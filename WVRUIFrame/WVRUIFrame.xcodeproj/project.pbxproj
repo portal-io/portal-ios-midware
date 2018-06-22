@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19F12B9D1F1C9D12008ED657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F12B9C1F1C9D12008ED657 /* main.m */; };
+		19F12BA01F1C9D12008ED657 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F12B9F1F1C9D12008ED657 /* AppDelegate.m */; };
+		19F12BA31F1C9D12008ED657 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F12BA21F1C9D12008ED657 /* ViewController.m */; };
+		19F12BA61F1C9D12008ED657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F12BA41F1C9D12008ED657 /* Main.storyboard */; };
+		19F12BA91F1C9D12008ED657 /* WVRUIFrame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19F12BA71F1C9D12008ED657 /* WVRUIFrame.xcdatamodeld */; };
+		19F12BAB1F1C9D12008ED657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19F12BAA1F1C9D12008ED657 /* Assets.xcassets */; };
+		19F12BAE1F1C9D12008ED657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F12BAC1F1C9D12008ED657 /* LaunchScreen.storyboard */; };
+		19F12BB91F1C9D12008ED657 /* WVRUIFrameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F12BB81F1C9D12008ED657 /* WVRUIFrameTests.m */; };
+		19F12BC41F1C9D12008ED657 /* WVRUIFrameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F12BC31F1C9D12008ED657 /* WVRUIFrameUITests.m */; };
+		3271724A1F6CCD4A000569AF /* WVRCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171FC1F6CCD4A000569AF /* WVRCollectionViewAdapter.m */; };
+		3271724B1F6CCD4A000569AF /* WVRTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 327171FE1F6CCD4A000569AF /* WVRTableViewAdapter.m */; };
+		3271724C1F6CCD4A000569AF /* WVRViewModelDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172031F6CCD4A000569AF /* WVRViewModelDispatcher.m */; };
+		3271724D1F6CCD4A000569AF /* WVRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172061F6CCD4A000569AF /* WVRError.m */; };
+		3271724E1F6CCD4A000569AF /* WVRModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172091F6CCD4A000569AF /* WVRModel.m */; };
+		3271724F1F6CCD4A000569AF /* WVRModelErrorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271720B1F6CCD4A000569AF /* WVRModelErrorInfo.m */; };
+		327172501F6CCD4A000569AF /* WVRModelErrorInfoReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271720D1F6CCD4A000569AF /* WVRModelErrorInfoReformer.m */; };
+		327172511F6CCD4A000569AF /* WVRPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172121F6CCD4A000569AF /* WVRPresenter.m */; };
+		327172521F6CCD4A000569AF /* SQCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172171F6CCD4A000569AF /* SQCollectionViewDelegate.m */; };
+		327172531F6CCD4A000569AF /* SQTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271721A1F6CCD4A000569AF /* SQTableViewDelegate.m */; };
+		327172541F6CCD4A000569AF /* SQKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271721E1F6CCD4A000569AF /* SQKeyboardTool.m */; };
+		327172581F6CCD4A000569AF /* WVRCollectionViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172391F6CCD4A000569AF /* WVRCollectionViewCellViewModel.m */; };
+		327172591F6CCD4A000569AF /* WVRCollectionViewSectionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271723B1F6CCD4A000569AF /* WVRCollectionViewSectionInfo.m */; };
+		3271725A1F6CCD4A000569AF /* WVRErrorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271723D1F6CCD4A000569AF /* WVRErrorViewModel.m */; };
+		3271725B1F6CCD4A000569AF /* WVRTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3271723F1F6CCD4A000569AF /* WVRTableViewCellViewModel.m */; };
+		3271725C1F6CCD4A000569AF /* WVRTableViewFootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172411F6CCD4A000569AF /* WVRTableViewFootViewModel.m */; };
+		3271725D1F6CCD4A000569AF /* WVRTableViewHeadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172431F6CCD4A000569AF /* WVRTableViewHeadViewModel.m */; };
+		3271725E1F6CCD4A000569AF /* WVRTableViewSectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172451F6CCD4A000569AF /* WVRTableViewSectionViewModel.m */; };
+		3271725F1F6CCD4A000569AF /* WVRViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327172471F6CCD4A000569AF /* WVRViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19F12BB51F1C9D12008ED657 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19F12B901F1C9D12008ED657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F12B971F1C9D12008ED657;
+			remoteInfo = WVRUIFrame;
+		};
+		19F12BC01F1C9D12008ED657 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19F12B901F1C9D12008ED657 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19F12B971F1C9D12008ED657;
+			remoteInfo = WVRUIFrame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19F12B981F1C9D12008ED657 /* WVRUIFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WVRUIFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F12B9C1F1C9D12008ED657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19F12B9E1F1C9D12008ED657 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19F12B9F1F1C9D12008ED657 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19F12BA11F1C9D12008ED657 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		19F12BA21F1C9D12008ED657 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19F12BA51F1C9D12008ED657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19F12BA81F1C9D12008ED657 /* WVRUIFrame.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WVRUIFrame.xcdatamodel; sourceTree = "<group>"; };
+		19F12BAA1F1C9D12008ED657 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19F12BAD1F1C9D12008ED657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19F12BAF1F1C9D12008ED657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F12BB41F1C9D12008ED657 /* WVRUIFrameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVRUIFrameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F12BB81F1C9D12008ED657 /* WVRUIFrameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRUIFrameTests.m; sourceTree = "<group>"; };
+		19F12BBA1F1C9D12008ED657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19F12BBF1F1C9D12008ED657 /* WVRUIFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WVRUIFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19F12BC31F1C9D12008ED657 /* WVRUIFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WVRUIFrameUITests.m; sourceTree = "<group>"; };
+		19F12BC51F1C9D12008ED657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		327171FB1F6CCD4A000569AF /* WVRCollectionViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCollectionViewAdapter.h; sourceTree = "<group>"; };
+		327171FC1F6CCD4A000569AF /* WVRCollectionViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCollectionViewAdapter.m; sourceTree = "<group>"; };
+		327171FD1F6CCD4A000569AF /* WVRTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTableViewAdapter.h; sourceTree = "<group>"; };
+		327171FE1F6CCD4A000569AF /* WVRTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRTableViewAdapter.m; sourceTree = "<group>"; };
+		327172001F6CCD4A000569AF /* WVRAnnotationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRAnnotationHeader.h; sourceTree = "<group>"; };
+		327172021F6CCD4A000569AF /* WVRViewModelDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRViewModelDispatcher.h; sourceTree = "<group>"; };
+		327172031F6CCD4A000569AF /* WVRViewModelDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRViewModelDispatcher.m; sourceTree = "<group>"; };
+		327172051F6CCD4A000569AF /* WVRError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRError.h; sourceTree = "<group>"; };
+		327172061F6CCD4A000569AF /* WVRError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRError.m; sourceTree = "<group>"; };
+		327172071F6CCD4A000569AF /* WVRErrorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRErrorProtocol.h; sourceTree = "<group>"; };
+		327172081F6CCD4A000569AF /* WVRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRModel.h; sourceTree = "<group>"; };
+		327172091F6CCD4A000569AF /* WVRModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRModel.m; sourceTree = "<group>"; };
+		3271720A1F6CCD4A000569AF /* WVRModelErrorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRModelErrorInfo.h; sourceTree = "<group>"; };
+		3271720B1F6CCD4A000569AF /* WVRModelErrorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRModelErrorInfo.m; sourceTree = "<group>"; };
+		3271720C1F6CCD4A000569AF /* WVRModelErrorInfoReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRModelErrorInfoReformer.h; sourceTree = "<group>"; };
+		3271720D1F6CCD4A000569AF /* WVRModelErrorInfoReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRModelErrorInfoReformer.m; sourceTree = "<group>"; };
+		3271720E1F6CCD4A000569AF /* WVRModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRModelProtocol.h; sourceTree = "<group>"; };
+		327172101F6CCD4A000569AF /* WVRListPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRListPresenterProtocol.h; sourceTree = "<group>"; };
+		327172111F6CCD4A000569AF /* WVRPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPresenter.h; sourceTree = "<group>"; };
+		327172121F6CCD4A000569AF /* WVRPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRPresenter.m; sourceTree = "<group>"; };
+		327172131F6CCD4A000569AF /* WVRPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPresenterProtocol.h; sourceTree = "<group>"; };
+		327172161F6CCD4A000569AF /* SQCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQCollectionViewDelegate.h; sourceTree = "<group>"; };
+		327172171F6CCD4A000569AF /* SQCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQCollectionViewDelegate.m; sourceTree = "<group>"; };
+		327172181F6CCD4A000569AF /* SQKitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQKitHeader.h; sourceTree = "<group>"; };
+		327172191F6CCD4A000569AF /* SQTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQTableViewDelegate.h; sourceTree = "<group>"; };
+		3271721A1F6CCD4A000569AF /* SQTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQTableViewDelegate.m; sourceTree = "<group>"; };
+		3271721D1F6CCD4A000569AF /* SQKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQKeyboardTool.h; sourceTree = "<group>"; };
+		3271721E1F6CCD4A000569AF /* SQKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQKeyboardTool.m; sourceTree = "<group>"; };
+		3271721F1F6CCD4A000569AF /* SNUtilToolHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNUtilToolHead.h; sourceTree = "<group>"; };
+		327172221F6CCD4A000569AF /* BaseBackForResultDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBackForResultDelegate.h; sourceTree = "<group>"; };
+		327172231F6CCD4A000569AF /* WVRBaseViewCProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRBaseViewCProtocol.h; sourceTree = "<group>"; };
+		327172241F6CCD4A000569AF /* WVRCollectionViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCollectionViewProtocol.h; sourceTree = "<group>"; };
+		327172251F6CCD4A000569AF /* WVREmptyViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVREmptyViewProtocol.h; sourceTree = "<group>"; };
+		327172261F6CCD4A000569AF /* WVRErrorViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRErrorViewProtocol.h; sourceTree = "<group>"; };
+		327172271F6CCD4A000569AF /* WVRListViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRListViewProtocol.h; sourceTree = "<group>"; };
+		327172281F6CCD4A000569AF /* WVRLoadingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRLoadingViewProtocol.h; sourceTree = "<group>"; };
+		327172291F6CCD4A000569AF /* WVRNavBarProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRNavBarProtocol.h; sourceTree = "<group>"; };
+		3271722A1F6CCD4A000569AF /* WVRNullViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRNullViewProtocol.h; sourceTree = "<group>"; };
+		3271722B1F6CCD4A000569AF /* WVRPageViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRPageViewProtocol.h; sourceTree = "<group>"; };
+		3271722C1F6CCD4A000569AF /* WVRTableViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTableViewProtocol.h; sourceTree = "<group>"; };
+		3271722D1F6CCD4A000569AF /* WVRTitleBarProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTitleBarProtocol.h; sourceTree = "<group>"; };
+		3271722E1F6CCD4A000569AF /* WVRToastViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRToastViewProtocol.h; sourceTree = "<group>"; };
+		3271722F1F6CCD4A000569AF /* WVRViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRViewProtocol.h; sourceTree = "<group>"; };
+		327172381F6CCD4A000569AF /* WVRCollectionViewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCollectionViewCellViewModel.h; sourceTree = "<group>"; };
+		327172391F6CCD4A000569AF /* WVRCollectionViewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCollectionViewCellViewModel.m; sourceTree = "<group>"; };
+		3271723A1F6CCD4A000569AF /* WVRCollectionViewSectionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRCollectionViewSectionInfo.h; sourceTree = "<group>"; };
+		3271723B1F6CCD4A000569AF /* WVRCollectionViewSectionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRCollectionViewSectionInfo.m; sourceTree = "<group>"; };
+		3271723C1F6CCD4A000569AF /* WVRErrorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRErrorViewModel.h; sourceTree = "<group>"; };
+		3271723D1F6CCD4A000569AF /* WVRErrorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRErrorViewModel.m; sourceTree = "<group>"; };
+		3271723E1F6CCD4A000569AF /* WVRTableViewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTableViewCellViewModel.h; sourceTree = "<group>"; };
+		3271723F1F6CCD4A000569AF /* WVRTableViewCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRTableViewCellViewModel.m; sourceTree = "<group>"; };
+		327172401F6CCD4A000569AF /* WVRTableViewFootViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTableViewFootViewModel.h; sourceTree = "<group>"; };
+		327172411F6CCD4A000569AF /* WVRTableViewFootViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRTableViewFootViewModel.m; sourceTree = "<group>"; };
+		327172421F6CCD4A000569AF /* WVRTableViewHeadViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTableViewHeadViewModel.h; sourceTree = "<group>"; };
+		327172431F6CCD4A000569AF /* WVRTableViewHeadViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRTableViewHeadViewModel.m; sourceTree = "<group>"; };
+		327172441F6CCD4A000569AF /* WVRTableViewSectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRTableViewSectionViewModel.h; sourceTree = "<group>"; };
+		327172451F6CCD4A000569AF /* WVRTableViewSectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRTableViewSectionViewModel.m; sourceTree = "<group>"; };
+		327172461F6CCD4A000569AF /* WVRViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRViewModel.h; sourceTree = "<group>"; };
+		327172471F6CCD4A000569AF /* WVRViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WVRViewModel.m; sourceTree = "<group>"; };
+		327172481F6CCD4A000569AF /* WVRViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRViewModelProtocol.h; sourceTree = "<group>"; };
+		327172491F6CCD4A000569AF /* WVRUIFrameHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WVRUIFrameHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19F12B951F1C9D12008ED657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F12BB11F1C9D12008ED657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F12BBC1F1C9D12008ED657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19F12B8F1F1C9D12008ED657 = {
+			isa = PBXGroup;
+			children = (
+				19F12B9A1F1C9D12008ED657 /* WVRUIFrame */,
+				19F12BB71F1C9D12008ED657 /* WVRUIFrameTests */,
+				19F12BC21F1C9D12008ED657 /* WVRUIFrameUITests */,
+				19F12B991F1C9D12008ED657 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19F12B991F1C9D12008ED657 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19F12B981F1C9D12008ED657 /* WVRUIFrame.app */,
+				19F12BB41F1C9D12008ED657 /* WVRUIFrameTests.xctest */,
+				19F12BBF1F1C9D12008ED657 /* WVRUIFrameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19F12B9A1F1C9D12008ED657 /* WVRUIFrame */ = {
+			isa = PBXGroup;
+			children = (
+				327171F91F6CCD4A000569AF /* Core */,
+				19F12B9E1F1C9D12008ED657 /* AppDelegate.h */,
+				19F12B9F1F1C9D12008ED657 /* AppDelegate.m */,
+				19F12BA11F1C9D12008ED657 /* ViewController.h */,
+				19F12BA21F1C9D12008ED657 /* ViewController.m */,
+				19F12BA41F1C9D12008ED657 /* Main.storyboard */,
+				19F12BAA1F1C9D12008ED657 /* Assets.xcassets */,
+				19F12BAC1F1C9D12008ED657 /* LaunchScreen.storyboard */,
+				19F12BAF1F1C9D12008ED657 /* Info.plist */,
+				19F12BA71F1C9D12008ED657 /* WVRUIFrame.xcdatamodeld */,
+				19F12B9B1F1C9D12008ED657 /* Supporting Files */,
+			);
+			path = WVRUIFrame;
+			sourceTree = "<group>";
+		};
+		19F12B9B1F1C9D12008ED657 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19F12B9C1F1C9D12008ED657 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19F12BB71F1C9D12008ED657 /* WVRUIFrameTests */ = {
+			isa = PBXGroup;
+			children = (
+				19F12BB81F1C9D12008ED657 /* WVRUIFrameTests.m */,
+				19F12BBA1F1C9D12008ED657 /* Info.plist */,
+			);
+			path = WVRUIFrameTests;
+			sourceTree = "<group>";
+		};
+		19F12BC21F1C9D12008ED657 /* WVRUIFrameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				19F12BC31F1C9D12008ED657 /* WVRUIFrameUITests.m */,
+				19F12BC51F1C9D12008ED657 /* Info.plist */,
+			);
+			path = WVRUIFrameUITests;
+			sourceTree = "<group>";
+		};
+		327171F91F6CCD4A000569AF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				327171FA1F6CCD4A000569AF /* Adapter */,
+				327171FF1F6CCD4A000569AF /* Annotation */,
+				327172041F6CCD4A000569AF /* Model */,
+				3271720F1F6CCD4A000569AF /* Presenter */,
+				327172141F6CCD4A000569AF /* SQKit */,
+				327172201F6CCD4A000569AF /* View */,
+				327172371F6CCD4A000569AF /* ViewModel */,
+				327172491F6CCD4A000569AF /* WVRUIFrameHeader.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		327171FA1F6CCD4A000569AF /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				327171FB1F6CCD4A000569AF /* WVRCollectionViewAdapter.h */,
+				327171FC1F6CCD4A000569AF /* WVRCollectionViewAdapter.m */,
+				327171FD1F6CCD4A000569AF /* WVRTableViewAdapter.h */,
+				327171FE1F6CCD4A000569AF /* WVRTableViewAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		327171FF1F6CCD4A000569AF /* Annotation */ = {
+			isa = PBXGroup;
+			children = (
+				327172001F6CCD4A000569AF /* WVRAnnotationHeader.h */,
+				327172011F6CCD4A000569AF /* WVRDispatcher */,
+			);
+			path = Annotation;
+			sourceTree = "<group>";
+		};
+		327172011F6CCD4A000569AF /* WVRDispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				327172021F6CCD4A000569AF /* WVRViewModelDispatcher.h */,
+				327172031F6CCD4A000569AF /* WVRViewModelDispatcher.m */,
+			);
+			path = WVRDispatcher;
+			sourceTree = "<group>";
+		};
+		327172041F6CCD4A000569AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327172051F6CCD4A000569AF /* WVRError.h */,
+				327172061F6CCD4A000569AF /* WVRError.m */,
+				327172071F6CCD4A000569AF /* WVRErrorProtocol.h */,
+				327172081F6CCD4A000569AF /* WVRModel.h */,
+				327172091F6CCD4A000569AF /* WVRModel.m */,
+				3271720A1F6CCD4A000569AF /* WVRModelErrorInfo.h */,
+				3271720B1F6CCD4A000569AF /* WVRModelErrorInfo.m */,
+				3271720C1F6CCD4A000569AF /* WVRModelErrorInfoReformer.h */,
+				3271720D1F6CCD4A000569AF /* WVRModelErrorInfoReformer.m */,
+				3271720E1F6CCD4A000569AF /* WVRModelProtocol.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3271720F1F6CCD4A000569AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				327172101F6CCD4A000569AF /* WVRListPresenterProtocol.h */,
+				327172111F6CCD4A000569AF /* WVRPresenter.h */,
+				327172121F6CCD4A000569AF /* WVRPresenter.m */,
+				327172131F6CCD4A000569AF /* WVRPresenterProtocol.h */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		327172141F6CCD4A000569AF /* SQKit */ = {
+			isa = PBXGroup;
+			children = (
+				327172151F6CCD4A000569AF /* Core */,
+				3271721B1F6CCD4A000569AF /* Util */,
+			);
+			path = SQKit;
+			sourceTree = "<group>";
+		};
+		327172151F6CCD4A000569AF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				327172161F6CCD4A000569AF /* SQCollectionViewDelegate.h */,
+				327172171F6CCD4A000569AF /* SQCollectionViewDelegate.m */,
+				327172181F6CCD4A000569AF /* SQKitHeader.h */,
+				327172191F6CCD4A000569AF /* SQTableViewDelegate.h */,
+				3271721A1F6CCD4A000569AF /* SQTableViewDelegate.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3271721B1F6CCD4A000569AF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3271721C1F6CCD4A000569AF /* KeyboardTool */,
+				3271721F1F6CCD4A000569AF /* SNUtilToolHead.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3271721C1F6CCD4A000569AF /* KeyboardTool */ = {
+			isa = PBXGroup;
+			children = (
+				3271721D1F6CCD4A000569AF /* SQKeyboardTool.h */,
+				3271721E1F6CCD4A000569AF /* SQKeyboardTool.m */,
+			);
+			path = KeyboardTool;
+			sourceTree = "<group>";
+		};
+		327172201F6CCD4A000569AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				327172211F6CCD4A000569AF /* Protocol */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		327172211F6CCD4A000569AF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				327172221F6CCD4A000569AF /* BaseBackForResultDelegate.h */,
+				327172231F6CCD4A000569AF /* WVRBaseViewCProtocol.h */,
+				327172241F6CCD4A000569AF /* WVRCollectionViewProtocol.h */,
+				327172251F6CCD4A000569AF /* WVREmptyViewProtocol.h */,
+				327172261F6CCD4A000569AF /* WVRErrorViewProtocol.h */,
+				327172271F6CCD4A000569AF /* WVRListViewProtocol.h */,
+				327172281F6CCD4A000569AF /* WVRLoadingViewProtocol.h */,
+				327172291F6CCD4A000569AF /* WVRNavBarProtocol.h */,
+				3271722A1F6CCD4A000569AF /* WVRNullViewProtocol.h */,
+				3271722B1F6CCD4A000569AF /* WVRPageViewProtocol.h */,
+				3271722C1F6CCD4A000569AF /* WVRTableViewProtocol.h */,
+				3271722D1F6CCD4A000569AF /* WVRTitleBarProtocol.h */,
+				3271722E1F6CCD4A000569AF /* WVRToastViewProtocol.h */,
+				3271722F1F6CCD4A000569AF /* WVRViewProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		327172371F6CCD4A000569AF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				327172381F6CCD4A000569AF /* WVRCollectionViewCellViewModel.h */,
+				327172391F6CCD4A000569AF /* WVRCollectionViewCellViewModel.m */,
+				3271723A1F6CCD4A000569AF /* WVRCollectionViewSectionInfo.h */,
+				3271723B1F6CCD4A000569AF /* WVRCollectionViewSectionInfo.m */,
+				3271723C1F6CCD4A000569AF /* WVRErrorViewModel.h */,
+				3271723D1F6CCD4A000569AF /* WVRErrorViewModel.m */,
+				3271723E1F6CCD4A000569AF /* WVRTableViewCellViewModel.h */,
+				3271723F1F6CCD4A000569AF /* WVRTableViewCellViewModel.m */,
+				327172401F6CCD4A000569AF /* WVRTableViewFootViewModel.h */,
+				327172411F6CCD4A000569AF /* WVRTableViewFootViewModel.m */,
+				327172421F6CCD4A000569AF /* WVRTableViewHeadViewModel.h */,
+				327172431F6CCD4A000569AF /* WVRTableViewHeadViewModel.m */,
+				327172441F6CCD4A000569AF /* WVRTableViewSectionViewModel.h */,
+				327172451F6CCD4A000569AF /* WVRTableViewSectionViewModel.m */,
+				327172461F6CCD4A000569AF /* WVRViewModel.h */,
+				327172471F6CCD4A000569AF /* WVRViewModel.m */,
+				327172481F6CCD4A000569AF /* WVRViewModelProtocol.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19F12B971F1C9D12008ED657 /* WVRUIFrame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F12BC81F1C9D12008ED657 /* Build configuration list for PBXNativeTarget "WVRUIFrame" */;
+			buildPhases = (
+				19F12B941F1C9D12008ED657 /* Sources */,
+				19F12B951F1C9D12008ED657 /* Frameworks */,
+				19F12B961F1C9D12008ED657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WVRUIFrame;
+			productName = WVRUIFrame;
+			productReference = 19F12B981F1C9D12008ED657 /* WVRUIFrame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19F12BB31F1C9D12008ED657 /* WVRUIFrameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F12BCB1F1C9D12008ED657 /* Build configuration list for PBXNativeTarget "WVRUIFrameTests" */;
+			buildPhases = (
+				19F12BB01F1C9D12008ED657 /* Sources */,
+				19F12BB11F1C9D12008ED657 /* Frameworks */,
+				19F12BB21F1C9D12008ED657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F12BB61F1C9D12008ED657 /* PBXTargetDependency */,
+			);
+			name = WVRUIFrameTests;
+			productName = WVRUIFrameTests;
+			productReference = 19F12BB41F1C9D12008ED657 /* WVRUIFrameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		19F12BBE1F1C9D12008ED657 /* WVRUIFrameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19F12BCE1F1C9D12008ED657 /* Build configuration list for PBXNativeTarget "WVRUIFrameUITests" */;
+			buildPhases = (
+				19F12BBB1F1C9D12008ED657 /* Sources */,
+				19F12BBC1F1C9D12008ED657 /* Frameworks */,
+				19F12BBD1F1C9D12008ED657 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19F12BC11F1C9D12008ED657 /* PBXTargetDependency */,
+			);
+			name = WVRUIFrameUITests;
+			productName = WVRUIFrameUITests;
+			productReference = 19F12BBF1F1C9D12008ED657 /* WVRUIFrameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19F12B901F1C9D12008ED657 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = WhaleyVR;
+				TargetAttributes = {
+					19F12B971F1C9D12008ED657 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+					};
+					19F12BB31F1C9D12008ED657 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 19F12B971F1C9D12008ED657;
+					};
+					19F12BBE1F1C9D12008ED657 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L6EYUBTRJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 19F12B971F1C9D12008ED657;
+					};
+				};
+			};
+			buildConfigurationList = 19F12B931F1C9D12008ED657 /* Build configuration list for PBXProject "WVRUIFrame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19F12B8F1F1C9D12008ED657;
+			productRefGroup = 19F12B991F1C9D12008ED657 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19F12B971F1C9D12008ED657 /* WVRUIFrame */,
+				19F12BB31F1C9D12008ED657 /* WVRUIFrameTests */,
+				19F12BBE1F1C9D12008ED657 /* WVRUIFrameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19F12B961F1C9D12008ED657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F12BAE1F1C9D12008ED657 /* LaunchScreen.storyboard in Resources */,
+				19F12BAB1F1C9D12008ED657 /* Assets.xcassets in Resources */,
+				19F12BA61F1C9D12008ED657 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F12BB21F1C9D12008ED657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F12BBD1F1C9D12008ED657 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19F12B941F1C9D12008ED657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				327172521F6CCD4A000569AF /* SQCollectionViewDelegate.m in Sources */,
+				3271725A1F6CCD4A000569AF /* WVRErrorViewModel.m in Sources */,
+				19F12BA31F1C9D12008ED657 /* ViewController.m in Sources */,
+				3271725E1F6CCD4A000569AF /* WVRTableViewSectionViewModel.m in Sources */,
+				3271724B1F6CCD4A000569AF /* WVRTableViewAdapter.m in Sources */,
+				19F12BA01F1C9D12008ED657 /* AppDelegate.m in Sources */,
+				327172581F6CCD4A000569AF /* WVRCollectionViewCellViewModel.m in Sources */,
+				19F12B9D1F1C9D12008ED657 /* main.m in Sources */,
+				327172511F6CCD4A000569AF /* WVRPresenter.m in Sources */,
+				3271724A1F6CCD4A000569AF /* WVRCollectionViewAdapter.m in Sources */,
+				19F12BA91F1C9D12008ED657 /* WVRUIFrame.xcdatamodeld in Sources */,
+				327172541F6CCD4A000569AF /* SQKeyboardTool.m in Sources */,
+				327172591F6CCD4A000569AF /* WVRCollectionViewSectionInfo.m in Sources */,
+				3271725D1F6CCD4A000569AF /* WVRTableViewHeadViewModel.m in Sources */,
+				3271724F1F6CCD4A000569AF /* WVRModelErrorInfo.m in Sources */,
+				3271724E1F6CCD4A000569AF /* WVRModel.m in Sources */,
+				3271724D1F6CCD4A000569AF /* WVRError.m in Sources */,
+				3271725F1F6CCD4A000569AF /* WVRViewModel.m in Sources */,
+				327172501F6CCD4A000569AF /* WVRModelErrorInfoReformer.m in Sources */,
+				327172531F6CCD4A000569AF /* SQTableViewDelegate.m in Sources */,
+				3271725C1F6CCD4A000569AF /* WVRTableViewFootViewModel.m in Sources */,
+				3271725B1F6CCD4A000569AF /* WVRTableViewCellViewModel.m in Sources */,
+				3271724C1F6CCD4A000569AF /* WVRViewModelDispatcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F12BB01F1C9D12008ED657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F12BB91F1C9D12008ED657 /* WVRUIFrameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F12BBB1F1C9D12008ED657 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19F12BC41F1C9D12008ED657 /* WVRUIFrameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19F12BB61F1C9D12008ED657 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F12B971F1C9D12008ED657 /* WVRUIFrame */;
+			targetProxy = 19F12BB51F1C9D12008ED657 /* PBXContainerItemProxy */;
+		};
+		19F12BC11F1C9D12008ED657 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19F12B971F1C9D12008ED657 /* WVRUIFrame */;
+			targetProxy = 19F12BC01F1C9D12008ED657 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19F12BA41F1C9D12008ED657 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F12BA51F1C9D12008ED657 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19F12BAC1F1C9D12008ED657 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19F12BAD1F1C9D12008ED657 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19F12BC61F1C9D12008ED657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19F12BC71F1C9D12008ED657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19F12BC91F1C9D12008ED657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRUIFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRUIFrame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		19F12BCA1F1C9D12008ED657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRUIFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRUIFrame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		19F12BCC1F1C9D12008ED657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRUIFrameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRUIFrameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVRUIFrame.app/WVRUIFrame";
+			};
+			name = Debug;
+		};
+		19F12BCD1F1C9D12008ED657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRUIFrameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRUIFrameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVRUIFrame.app/WVRUIFrame";
+			};
+			name = Release;
+		};
+		19F12BCF1F1C9D12008ED657 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRUIFrameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRUIFrameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVRUIFrame;
+			};
+			name = Debug;
+		};
+		19F12BD01F1C9D12008ED657 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = L6EYUBTRJ5;
+				INFOPLIST_FILE = WVRUIFrameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snailvr.WVRUIFrameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WVRUIFrame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19F12B931F1C9D12008ED657 /* Build configuration list for PBXProject "WVRUIFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F12BC61F1C9D12008ED657 /* Debug */,
+				19F12BC71F1C9D12008ED657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F12BC81F1C9D12008ED657 /* Build configuration list for PBXNativeTarget "WVRUIFrame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F12BC91F1C9D12008ED657 /* Debug */,
+				19F12BCA1F1C9D12008ED657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F12BCB1F1C9D12008ED657 /* Build configuration list for PBXNativeTarget "WVRUIFrameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F12BCC1F1C9D12008ED657 /* Debug */,
+				19F12BCD1F1C9D12008ED657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19F12BCE1F1C9D12008ED657 /* Build configuration list for PBXNativeTarget "WVRUIFrameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19F12BCF1F1C9D12008ED657 /* Debug */,
+				19F12BD01F1C9D12008ED657 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		19F12BA71F1C9D12008ED657 /* WVRUIFrame.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				19F12BA81F1C9D12008ED657 /* WVRUIFrame.xcdatamodel */,
+			);
+			currentVersion = 19F12BA81F1C9D12008ED657 /* WVRUIFrame.xcdatamodel */;
+			path = WVRUIFrame.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 19F12B901F1C9D12008ED657 /* Project object */;
+}
