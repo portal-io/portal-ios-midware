@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "PortalIosMidware"
   s.version      = "0.0.1"
-  s.summary      = "A short description of PortalIosMidware."
+  s.summary      = "UIFrame."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                    UIFrame  框架
                    DESC
 
-  s.homepage     = "http://EXAMPLE/PortalIosMidware"
+  s.homepage     = "https://github.com/portal-io/portal-ios-midware"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -64,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/PortalIosMidware.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/portal-io/portal-ios-midware.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,9 +91,45 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.subspec 'WVRUIFrame' do |cur|
+    SQKit   = { :spec_name => "SQKit",:source_files => ['WVRUIFrame/WVRUIFrame/Core/SQKit/**/*'] }
+    WVRUIFrameModel       = { :spec_name => "Model", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Model/**/*']}
+    WVRUIFrameView        = { :spec_name => "View", :source_files => ['WVRUIFrame/WVRUIFrame/Core/View/**/*'], :sub_dependency => [SQKit] }
+    WVRUIFrameViewModel   = { :spec_name => "ViewModel" ,:source_files => ['WVRUIFrame/WVRUIFrame/Core/ViewModel/**/*'], :sub_dependency => [SQKit] }
+    WVRUIFramePresenter   = { :spec_name => "Presenter", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Presenter/**/*'], :sub_dependency => [WVRUIFrameView] }
+    WVRAdapter            = { :spec_name => "Adapter", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Adapter/**/*'], :sub_dependency => [SQKit] }
+    WVRAnnotation         = { :spec_name => "Annotation", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Annotation/**/*'], :sub_dependency => [WVRUIFramePresenter, WVRUIFrameViewModel] }
+    
+    $animations = [WVRUIFrameModel, WVRUIFrameView, WVRUIFrameViewModel, WVRUIFramePresenter, SQKit, WVRAdapter, WVRAnnotation]
 
+    $animations.each do |spec|
+        cur.subspec spec[:spec_name] do |ss|
+
+            # specname = spec[:spec_name]
+
+            # sources = ["WVRUIFrame/Core/#{specname}/**/*"]
+
+            # ss.source_files = sources
+
+            if spec[:source_files]
+              ss.source_files = spec[:source_files]
+            end
+            if spec[:sub_dependency]
+              spec[:sub_dependency].each do |dep|
+                  ss.dependency "WVRUIFrame/#{dep[:spec_name]}"
+              end
+            end
+            if spec[:dependency]
+                spec[:dependency].each do |dep|
+                    ss.dependency dep[:name], dep[:version]
+                end
+            end
+
+        end
+    end
+    cur.source_files = "WVRUIFrame/Core/WVRUIFrameHeader.h"
+    cur.requires_arc = true
+  end
   # s.public_header_files = "Classes/**/*.h"
 
 
