@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PortalIosMidware"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "UIFrame."
 
   # This description is used to generate tags and improve search results.
@@ -92,44 +92,29 @@ Pod::Spec.new do |s|
   #
 
   s.subspec 'WVRUIFrame' do |cur|
-    SQKit   = { :spec_name => "SQKit",:source_files => ['WVRUIFrame/WVRUIFrame/Core/SQKit/**/*'] }
-    WVRUIFrameModel       = { :spec_name => "Model", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Model/**/*']}
-    WVRUIFrameView        = { :spec_name => "View", :source_files => ['WVRUIFrame/WVRUIFrame/Core/View/**/*'], :sub_dependency => [SQKit] }
-    WVRUIFrameViewModel   = { :spec_name => "ViewModel" ,:source_files => ['WVRUIFrame/WVRUIFrame/Core/ViewModel/**/*'], :sub_dependency => [SQKit] }
-    WVRUIFramePresenter   = { :spec_name => "Presenter", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Presenter/**/*'], :sub_dependency => [WVRUIFrameView] }
-    WVRAdapter            = { :spec_name => "Adapter", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Adapter/**/*'], :sub_dependency => [SQKit] }
-    WVRAnnotation         = { :spec_name => "Annotation", :source_files => ['WVRUIFrame/WVRUIFrame/Core/Annotation/**/*'], :sub_dependency => [WVRUIFramePresenter, WVRUIFrameViewModel] }
-    
-    $animations = [WVRUIFrameModel, WVRUIFrameView, WVRUIFrameViewModel, WVRUIFramePresenter, SQKit, WVRAdapter, WVRAnnotation]
-
-    $animations.each do |spec|
-        cur.subspec spec[:spec_name] do |ss|
-
-            # specname = spec[:spec_name]
-
-            # sources = ["WVRUIFrame/Core/#{specname}/**/*"]
-
-            # ss.source_files = sources
-
-            if spec[:source_files]
-              ss.source_files = spec[:source_files]
-            end
-            if spec[:sub_dependency]
-              spec[:sub_dependency].each do |dep|
-                  ss.dependency "WVRUIFrame/#{dep[:spec_name]}"
-              end
-            end
-            if spec[:dependency]
-                spec[:dependency].each do |dep|
-                    ss.dependency dep[:name], dep[:version]
-                end
-            end
-
-        end
-    end
-    cur.source_files = "WVRUIFrame/Core/WVRUIFrameHeader.h"
+    cur.source_files = "WVRUIFrame/WVRUIFrame/Core/**/*.{h,m}"
     cur.requires_arc = true
   end
+  s.subspec 'WVRAPIService' do |cur|
+    cur.source_files = 'WVRAPIService/WVRAPIService/Classes/*.{h,m}'
+    cur.dependency 'PortalIosLibrary/WVRNet'
+    cur.dependency 'PortalIosLibrary/WVRAppContext'
+    cur.requires_arc = true
+  end
+  s.subspec 'WVRInteractor' do |cur|
+    cur.source_files = 'WVRInteractor/WVRInteractor/Core/*.{h,m}'
+
+    cur.requires_arc = true
+    cur.dependency 'PortalIosLibrary/WVRNet'
+  end
+  s.subspec 'WVRMediator' do |cur|
+    cur.source_files = ['WVRMediator/WVRMediator/Classes/*.{h,m}', 'WVRMediator/WVRMediator/Classes/**/*.{h,m}']
+    cur.requires_arc = true
+    cur.dependency 'CTMediator'
+    cur.dependency 'YYModel'
+    cur.framework = 'UIKit', 'Foundation'
+  end
+  
   # s.public_header_files = "Classes/**/*.h"
 
 
